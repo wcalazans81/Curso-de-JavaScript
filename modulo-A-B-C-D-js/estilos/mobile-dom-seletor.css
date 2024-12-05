@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    
+   
+}
+
+header > section > p {
+    flex:0 0 400px;
+}
+header > section > code {
+    flex: 0 0 400px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+main > section > p {
+    flex: 0 0 400px;
+}
+
+main > section > code {
+    flex: 0 0 400px;
+}

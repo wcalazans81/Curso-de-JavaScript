@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+    <link rel="shortcut icon" href="../imagens/logo_final3_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/condicionais.css">
+</head>
+<body>
+    <header>
+        <h1>Comando Dom em JavaScript</h1>
+        <section id="area">
+            <p>Interaja....</p>
+        </section>
+        <h1>Somando Valores</h1>
+        <section class="soma">
+            <input type="number" name="txtn1" id="itxtn1" placeholder="Digite um número"> +
+            <input type="number" name="txtn2" id="itxtn2" placeholder="Digite outro número">
+            <input id="botao" type="button" value="Somar" onclick="somar()">
+            <div id="res">Resultado</div>
+        </section>
+    </header>
+    <main>
+        <h1>Estruturas Condicionais</h1>
+        <section id="par">
+            <h2>Descubra se o número digitado é Par ou impar</h2>
+            <input type="number" name="dig" id="idig" placeholder="Digite um número">
+            <input type="button" value="Resposta" onclick="resposta()">
+            <div id="resp">Resposta</div>
+        </section>
+        <section id="voto">
+            <h2>Verifique se seu voto é Obrigatório</h2>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade">
+            <input type="button" value="Resposta" onclick="voto()">
+            <div id="respos">Resposta</div>
+        </section>
+        <section id="ihora">
+            <h2>Verifique pela hora se é manhã tarde ou noite</h2>
+            <input type="button" value="Resposta" onclick="hor()">
+            <div id="respost">Resposta</div>
+        </section>
+    </main>
+    <script src="../js/condicionais.js"></script>
+</body>
+</html>

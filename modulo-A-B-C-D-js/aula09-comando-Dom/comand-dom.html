@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comando Dom</title>
+    <link rel="shortcut icon" href="../imagens/logo_final3_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/dom-seletor.css">
+    <link rel="stylesheet" href="../estilos/mobile-dom-seletor.css" media="screen and (max-width: 650px)">
+</head>
+<body>
+    <header>
+        <h1>Comando Dom em JavaScript</h1>
+        <p>O comando <strong>Dom</strong> só roda quando o Index está rodando no navegador</p>
+        <p>A ávore Dom serve para localizar os elementos dentro do seu HTML.</p>
+        <section>              
+                <picture>
+                    <source media="(max-width: 650px)" srcset="../imagens/arvore-dom100.jpg" type="image/png">
+                    <source media="(max-width: 993px)" srcset="../imagens/arvore-dom150.jpg" type="image/png">
+                    <img src="../imagens/arvore-dom250.jpg" alt="representação de uma ávore Dom">
+                </picture>
+                <p>Para acessar a ávore Dom uasr os seguintes comandos em JavaScript</p>
+                <code>
+                    window.document.write('Olá Mundo!') <br>
+                    window.document.write(window.document.charset) //mostrar na tela de acordo com a árvore dom <br> 
+                    window.document.write(window.navigator.appName) //buscar configurações da minha página <br> 
+                    window.document.write(window.document.URL) //buscar configurações da minha página navegdor e url
+                </code>
+            </section>
+        </header>
+        <main>
+            <section>
+                <p>Para acessar um elemento pontual na árvore dom usa-se comandos específicos <br>Como por exemplo:</p>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="../imagens/selecao-elemento100.jpg" type="image/png">
+                    <source media="(max-width: 993px)" srcset="../imagens/selecao-elemento150.jpg" type="image/png">
+                    <img src="../imagens/selecao-elemento250.jpg" alt="tipos de seleçaõ">
+                </picture>
+                <code>
+                        var p1 = window.document.getElementsByTagName('p')[1]//selecionar tags pelo nome e mostra texto do p <br>
+                        window.document.write('Elaine Linda ' + p1.innerText) <br>
+                        var p1 = window.document.getElementsByTagName('p')[1]//selecionar tags pelo nome e mostra texto do p <br>
+                        p1.style.color = 'red' //muda o estilo do parágrafo
+                </code>
+        </section>
+            <section >
+                <p>Seleção por id do elemento</p>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="../imagens/selecao1-100.jpg" type="image/png">
+                    <source media="(max-width: 993px)" srcset="../imagens/selecao1-150.jpg" type="image/png">
+                    <img src="../imagens/selecao1-250.jpg" alt="tipos de seleçaõ">
+                </picture>
+                <code>
+                    var s = window.document.getElementById('msg') //seleção do elemento por id <br>
+                    s.style.background = 'green'// muda cor da seleção <br>
+                    var s = window.document.getElementById('msg') //seleção do elemento por id <br>
+                    s.innerText = 'Elaine Linda'//muda texto do elemento via javascript
+                </code>
+            </section>
+            <section>
+                <p>Seleção por nome do elemento</p>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="../imagens/nome100.jpg" type="image/jpg">
+                    <source media="(max-width: 993px)" srcset="../imagens/nome150.jpg" type="image/jpg">
+                    <img src="../imagens/nome250.jpg" alt="tipos de seleçaõ">
+                </picture>
+                <code>
+                    var n1 = window.document.getElementsByName('gms')[0] //seleção do elemento por nome <br>
+                    s.innerText = 'Elaine Linda'//muda texto do elemento via javascript <br>
+                    n1.style.background = 'green'// muda cor da seleção
+                </code>
+            </section>
+            <section>
+                <p>Seleção por class do elemento</p>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="../imagens/class100.jpg" type="image/jpg">
+                    <source media="(max-width: 993px)" srcset="../imagens/class150.jpg" type="image/jpg">
+                    <img src="../imagens/class250.jpg" alt="tipos de seleçaõ">
+                </picture>
+                <code>
+                    var c1 = window.document.getElementsByClassName('smg')[0] //seleção do elemento por class<br>
+                    c1.innerText = 'Elaine Linda'//muda texto do elemento via javascript <br>
+                    c1.style.background = 'green'// muda cor da seleção
+                </code>
+            </section>
+            <section>
+                <p>Seleção por Seletor do elemento</p>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="../imagens/seletor100.jpg" type="image/jpg">
+                    <source media="(max-width: 993px)" srcset="../imagens/seletor150.jpg" type="image/jpg">
+                    <img src="../imagens/seletor250.jpg" alt="tipos de seleçaõ">
+                </picture>
+                <code>
+                    var c1 = window.document.querySelector('section.msg') //seleção do elemento por seletor <br>
+                    c1.innerText = 'Elaine Linda'//muda texto do elemento via javascript <br>
+                    c1.style.background = 'green'// muda cor da seleção
+                </code>
+        </section>
+    </main>
+    <script>
+        /*var c1 = window.document.querySelector('section.msg') //seleção do elemento por nome
+        c1.innerText = 'Elaine Linda'//muda texto do elemento via javascript
+        c1.style.background = 'green'// muda cor da seleção*/
+    </script>
+</body>
+</html>

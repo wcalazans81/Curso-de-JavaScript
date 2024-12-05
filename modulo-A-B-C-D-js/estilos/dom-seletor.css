@@ -1,0 +1,100 @@
+@charset "YTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header > h1 {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding: 20px;
+
+}
+header > p {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding: 20px;
+}
+
+header > section > picture > img {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+header > section > p {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding: 20px;
+}
+
+header > section > code {
+    /*border: 2px dotted black;*/
+    font-size: 1.3em;
+    border-radius: 10px;
+    display: block;
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 729px; 
+    line-height: 1.4em;
+}
+
+main > section > p {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+    padding: 20px;
+}
+
+main > section >  picture > img {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main > section > code {
+    border-radius: 10px;
+    display: block;
+    background-color: white;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 729px; 
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
